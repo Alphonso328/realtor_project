@@ -17,8 +17,8 @@
                 <li class="{% if request.resolver_match.url_name == 'about' %}active{% endif %} nav-item mr-3">
                     <a class="nav-link" href="{% url 'about' %}">About</a>
                 </li>
-                <li class="{% if request.resolver_match.url_name == 'listing' %}active{% endif %} nav-item mr-3">
-                    <a class="nav-link" href=" ">Featured Listings</a>
+                <li class="{% if request.resolver_match.url_name == 'listings' %}active{% endif %} nav-item mr-3">
+                    <a class="nav-link" href="{% url 'listings' %}">Featured Listings</a>
                 </li>
             </ul>
 
